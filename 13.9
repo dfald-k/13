@@ -1,0 +1,11 @@
+for i in range(30):
+    print(f"данные для ученика {i + 1}:")
+    surname = input("Фамилия: ")
+    class_num = input("Класс: ")
+    grade = input("Оценка по информатике: ")
+    students.append((surname, class_num, grade))
+    print()
+print("фамилии учеников 9-х классов имеющих оценку 5:")
+for surname, class_num, grade in students:
+    if class_num == "9" and grade == "5":
+        print(surname)
