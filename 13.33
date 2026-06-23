@@ -1,0 +1,15 @@
+max_sum_scores = -1
+top_student = ""
+for i in range(22):
+    print(f"данные для ученика {i + 1}:")
+    surname = input("фамилия: ")
+    scores = []
+    for j in range(4):
+        score = float(input(f"оценка по предмету {j + 1}: "))
+        scores.append(score)
+    print()
+    total_scores = sum(scores)
+    if total_scores > max_sum_scores:
+        max_sum_scores = total_scores
+        top_student = surname
+print(f"Ученик с максимальной суммой оценок: {top_student}")
