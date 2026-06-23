@@ -1,0 +1,13 @@
+precipitation_snow = 0
+precipitation_rain = 0
+for day in range(1, 31):
+    print(f"день {day}:")
+    precip = float(input("колво осадков: "))
+    temp = float(input("температура воздуха: "))
+    print()
+    if temp > 0:
+        precipitation_rain += precip
+    else:
+        precipitation_snow += precip
+print(f"Осадков в виде снега: {precipitation_snow:.2f}")
+print(f"Осадков в виде дождя: {precipitation_rain:.2f}")
