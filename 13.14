@@ -1,0 +1,14 @@
+hours1 = int(input("часы первого момента (0-23): "))
+minutes1 = int(input("минуты первого момента (0-59): "))
+seconds1 = int(input("секунды первого момента (0-59): "))
+hours2 = int(input("Введите часы второго момента (0-23): "))
+minutes2 = int(input("Введите минуты второго момента (0-59): "))
+seconds2 = int(input("Введите секунды второго момента (0-59): "))
+total_seconds1 = hours1 * 3600 + minutes1 * 60 + seconds1
+total_seconds2 = hours2 * 3600 + minutes2 * 60 + seconds2
+if total_seconds1 < total_seconds2:
+    print("первый момент раньше")
+elif total_seconds1 > total_seconds2:
+    print("второй момент раньше")
+else:
+    print("моменты времени совпадают")
