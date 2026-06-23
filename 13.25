@@ -1,0 +1,15 @@
+sum_height_men = 0
+count_men = 0
+for i in range(22):
+    print(f"данные для человека {i + 1}:")
+    gender = input("пол (М/Ж): ").strip().upper()
+    height = float(input("рост (в см): "))
+    print()
+    if gender == 'М':
+        sum_height_men += height
+        count_men += 1
+if count_men > 0:
+    average_height = sum_height_men / count_men
+    print(f"средний рост мужчин: {average_height:.2f} см")
+else:
+    print("нет мужчин в списке.")
