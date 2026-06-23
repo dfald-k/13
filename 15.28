@@ -1,0 +1,9 @@
+max_density = 0
+for i in range(30):
+    print(f"данные для предмета {i + 1}:")
+    mass = float(input("масса (в кг): "))
+    volume = float(input("объем (в кубических метрах): "))
+    density = mass / volume
+    if density > max_density:
+        max_density = density
+print(f"Максимальная плотность среди предметов: {max_density:.4f}")
