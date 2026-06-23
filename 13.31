@@ -1,0 +1,14 @@
+min_density = None
+country_with_min_density = ""
+for i in range(28):
+    print(f"данные для страны {i + 1}:")
+    name = input("название страны: ")
+    population_million = float(input("численность населения (в миллионах): "))
+    area_thousand_sq_km = float(input("площадь: "))
+    print()
+    area_km2 = area_thousand_sq_km * 1000
+    density = population_million * 1_000_000 / area_km2
+    if min_density is None or density < min_density:
+        min_density = density
+        country_with_min_density = name
+print(f"страна с минимальной плотностью населения: {country_with_min_density}")
