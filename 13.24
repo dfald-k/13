@@ -1,0 +1,15 @@
+total_cost = 0
+count = 0
+for i in range(20):
+    print(f"данные для автомобиля {i + 1}:")
+    cost = float(input("стоимость: "))
+    age = int(input("возраст: "))
+    print()
+    if age > 6:
+        total_cost += cost
+        count += 1
+if count > 0:
+    average_cost = total_cost / count
+    print(f"средняя стоимость автомобилей с возрастом более 6: {average_cost:.2f}")
+else:
+    print("нет автомобилей старше 6")
